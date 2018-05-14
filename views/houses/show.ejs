@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <div class="student-container">
+            <% data.forEach(data => { %>
+                <span class="student"><%= data.fname %> <%= data.lname %></span>
+                <br>
+            <% }) %>
+        </div>
+    </body>
+</html>

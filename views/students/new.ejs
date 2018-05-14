@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+
+        <form action="students/<%= data.id%>?_method=PUT" method="POST">
+
+            <h1>Put Your Contact Information below!</h1>
+
+            <input type="text" name="fname" value="<%= data.fname%>" />
+            <input type="text" name="lname" value="<%= data.lname%>" />
+            <input type="text" name="image" value="<%= data.image%>" />
+
+            <select name="house_id">
+              <option value="1">Gryffindor</option>
+              <option value="2">Hufflepuff</option>
+              <option value="3">Ravenclaw</option>
+              <option value="4">Slytherin</option>
+            </select>
+
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>

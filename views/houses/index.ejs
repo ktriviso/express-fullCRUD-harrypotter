@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <div class="students-container">
+            <% data.forEach(data => { %>
+                <div class="student">
+                    <a href="http://localhost:3000/houses/<%= data.id%>"><%= data.name %></a>
+                    <img src= "<%= data.img_url %>"/>
+                </div>
+            <% }) %>
+        </div>
+    </body>
+
+</html>
